@@ -14,11 +14,16 @@
 import Vue from "vue";
 import axios from "axios";
 
+
 // Plugins
 import App from "./App.vue";
 import Chartist from "chartist";
 import VueAxios from "vue-axios";
 import DashboardPlugin from "./material-dashboard";
+
+
+
+
 
 // plugin setup
 Vue.use(DashboardPlugin);
@@ -27,6 +32,7 @@ Vue.use(VueAxios, axios);
 // router & store setup
 import router from "./router";
 import store from "./store";
+
 
 // global library setup
 Vue.prototype.$Chartist = Chartist;

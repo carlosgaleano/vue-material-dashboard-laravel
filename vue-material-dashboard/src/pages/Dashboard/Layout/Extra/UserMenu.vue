@@ -57,9 +57,9 @@ export default {
   data() {
     return {
       isClosed: true,
-      title: 'Profile',
+      title: 'Usuario',
       rtlTitle: "تانيا أندرو",
-      avatar: process.env.VUE_APP_BASE_URL + "/img/faces/marc.jpg"
+      avatar: process.env.VUE_APP_BASE_URL + "/img/faces/avatar_usuario.png"
     };
   },
 

@@ -46,10 +46,8 @@
         &copy; {{ new Date().getFullYear() }},
         made with <i class="fa fa-heart heart"></i>
         by
-        <a href="https://www.creative-tim.com/?ref=mdp-vuejs-api" target="_blank">Creative Tim</a>
-        and
-        <a href="https://www.updivision.com/?ref=mdp-vuejs-api" target="_blank">UPDIVISION</a>
-        for a better web.
+        <a href="https://www.creative-tim.com/?ref=mdp-vuejs-api" target="_blank">Logytech Chile</a>
+      
       </div>
     </div>
   </footer>

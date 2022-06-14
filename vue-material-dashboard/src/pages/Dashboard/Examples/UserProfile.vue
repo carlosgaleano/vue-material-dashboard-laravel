@@ -38,6 +38,7 @@
 
     methods: {
       async getProfile() {
+        console.log('test');
         await this.$store.dispatch("profile/me")
         this.user = await this.$store.getters["profile/me"]
       }

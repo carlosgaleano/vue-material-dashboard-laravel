@@ -55,7 +55,7 @@
             <img :src="item.image" alt=""/>
           </a>
         </li>
-
+ <!--
         <li class="button-container">
           <div class="">
             <md-button
@@ -87,7 +87,7 @@
             </md-button
             >
           </div>
-        </li>
+        </li> -->
 
         <li class="github-buttons">
           <gh-btns-star

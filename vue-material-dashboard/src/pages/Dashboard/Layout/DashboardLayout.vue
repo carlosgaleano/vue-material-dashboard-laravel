@@ -6,6 +6,7 @@
       { rtl: $route.meta.rtlActive },
     ]"
   >
+
     <notifications></notifications>
     <side-bar
       :active-color="sidebarBackground"
@@ -48,6 +49,23 @@
             path: '/components/table',
           }"
         />
+         <sidebar-item
+          :link="{
+            name: 'Despachos',
+            icon: 'content_paste',
+            path: '/despachos/despachos-items',
+          }"
+        />
+           <sidebar-item
+          :link="{
+            name: 'Despachos test',
+            icon: 'content_paste',
+            path: '/despachos/despachos-test',
+          }"
+        />
+
+
+        
         <sidebar-item
           :link="{
             name: 'Table Lists',
@@ -134,7 +152,7 @@
         />
       </template>
 
-      <div style="width: 100%; position: absolute; bottom: 0; padding: 16px">
+    <!--   <div style="width: 100%; position: absolute; bottom: 0; padding: 16px">
         <md-button
           v-if="sidebarMini"
           class="md-button md-danger md-block"
@@ -144,7 +162,7 @@
           <i class="fas fa-download" style="margin-right: 4px"></i>Upgrade to
           PRO
         </md-button>
-      </div>
+      </div> -->
     </side-bar>
 
     <div class="main-panel">

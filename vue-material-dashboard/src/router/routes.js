@@ -6,6 +6,9 @@ import Dashboard from "@/pages/Dashboard/Dashboard.vue";
 // Profile
 import UserProfile from "@/pages/Dashboard/Examples/UserProfile.vue";
 
+//Despachos
+import DespachosItems from "@/pages/Dashboard/Despachos/DespachosItems.vue";
+import Despachostest from "@/pages/Dashboard/Despachos/TestPagination.vue";
 // User Management
 import ListUserPage from "@/pages/Dashboard/Examples/UserManagement/ListUserPage.vue";
 
@@ -82,6 +85,28 @@ let componentsMenu = {
   ]
 };
 
+let despachoMenu = {
+  path: "/despachos",
+  component: DashboardLayout,
+  name: "Despachos",
+  children: [
+    {
+      path: "despachos-items",
+      name: "Despachos Items",
+      components: { default: DespachosItems },
+      meta: { middleware: auth }
+    },
+  
+      {
+        path: "despachos-test",
+        name: "Despachos test",
+        components: { default: Despachostest },
+        meta: { middleware: auth }
+      },
+    
+  ]
+};
+
 let examplesMenu = {
   path: "/examples",
   component: DashboardLayout,
@@ -143,6 +168,7 @@ const routes = [
   },
   componentsMenu,
   examplesMenu,
+  despachoMenu,
   authPages
 ];
 
