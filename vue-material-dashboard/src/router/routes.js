@@ -9,6 +9,10 @@ import UserProfile from "@/pages/Dashboard/Examples/UserProfile.vue";
 //Despachos
 import DespachosItems from "@/pages/Dashboard/Despachos/DespachosItems.vue";
 import Despachostest from "@/pages/Dashboard/Despachos/TestPagination.vue";
+import Despachostest2 from "@/pages/Dashboard/Despachos/Test2Pagination.vue";
+import Despachostest3 from "@/pages/Dashboard/Despachos/Test3Pagination.vue";
+
+
 // User Management
 import ListUserPage from "@/pages/Dashboard/Examples/UserManagement/ListUserPage.vue";
 
@@ -101,6 +105,19 @@ let despachoMenu = {
         path: "despachos-test",
         name: "Despachos test",
         components: { default: Despachostest },
+        meta: { middleware: auth }
+      },
+      
+      {
+        path: "despachos-test2",
+        name: "Despachos test 2",
+        components: { default: Despachostest2 },
+        meta: { middleware: auth }
+      },
+      {
+        path: "despachos-test3",
+        name: "Despachos test 3",
+        components: { default: Despachostest3 },
         meta: { middleware: auth }
       },
     

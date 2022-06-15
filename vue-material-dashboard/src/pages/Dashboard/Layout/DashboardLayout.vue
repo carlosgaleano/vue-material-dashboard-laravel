@@ -63,7 +63,20 @@
             path: '/despachos/despachos-test',
           }"
         />
-
+   <sidebar-item
+          :link="{
+            name: 'Despachos test 2',
+            icon: 'content_paste',
+            path: '/despachos/despachos-test2',
+          }"
+        />
+           <sidebar-item
+          :link="{
+            name: 'Despachos test 3',
+            icon: 'content_paste',
+            path: '/despachos/despachos-test3',
+          }"
+        />
 
         
         <sidebar-item

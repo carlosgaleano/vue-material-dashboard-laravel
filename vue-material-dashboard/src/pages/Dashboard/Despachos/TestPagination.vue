@@ -1,7 +1,8 @@
 <template>
 
-{{users}}
+
   <div>
+    {{users}}
     <md-table v-model="paginatedUsers" md-card md-sort="name" md-sort-order="asc">
       <md-table-toolbar>
         <h1 class="md-title">Users</h1>
